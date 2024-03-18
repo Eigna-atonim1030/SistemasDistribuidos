@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historial de Verificación de Medicamentos</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-no-repeat bg-cover" style="background-image: url('fondo.avif');">
+  <nav class="bg-blue-500 py-4">
+    <div class="container mx-auto">
+      <div class="flex items-center justify-center"> <!-- Aquí se cambió de 'justify-between' a 'justify-center' -->
+        <a href="#" class="text-white font-bold">Seguimiento de un Medicamento</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg max-w-md">
+    <div class="text-center mb-8">
+      <img src="logo.jpg" alt="Logo de la compañía" class="mx-auto" style="max-width: 100px;">
+      <h1 class="mt-3 text-3xl font-bold text-gray-800">Historial de Verificación de Autenticidad de Medicamentos</h1>
+    </div>
+    <form id="formularioMedicamento">
+      <div class="mb-4">
+        <label for="fecha" class="block text-gray-700">Fecha de Verificación:</label>
+        <input type="date" id="fecha" name="fecha" class="form-input mt-1 block w-full" required>
+      </div>
+      <div class="mb-4">
+        <label for="nombreMedicamento" class="block text-gray-700">Nombre del Medicamento:</label>
+        <input type="text" id="nombreMedicamento" name="nombreMedicamento" class="form-input mt-1 block w-full" required>
+      </div>
+      <div class="mb-4">
+        <label for="lote" class="block text-gray-700">Número de Lote:</label>
+        <input type="text" id="lote" name="lote" class="form-input mt-1 block w-full" required>
+      </div>
+      <div class="mb-4">
+        <label for="fechaFabricacion" class="block text-gray-700">Fecha de Fabricación:</label>
+        <input type="date" id="fechaFabricacion" name="fechaFabricacion" class="form-input mt-1 block w-full" required>
+      </div>
+      <div class="mb-4">
+        <label for="fechaExpiracion" class="block text-gray-700">Fecha de Expiración:</label>
+        <input type="date" id="fechaExpiracion" name="fechaExpiracion" class="form-input mt-1 block w-full" required>
+      </div>
+      <div class="mb-4">
+        <label for="fabricante" class="block text-gray-700">Fabricante:</label>
+        <input type="text" id="fabricante" 
